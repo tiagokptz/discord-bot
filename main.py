@@ -86,7 +86,6 @@ async def on_reaction_add(reaction, user):
             await asyncio.sleep(3)
             await channel.purge(limit=None)
 
-
 @bot.command(name='oi')
 async def send_hi(ctx):
     await ctx.send(f'iai, {ctx.author.name} como posso ajudar?')
