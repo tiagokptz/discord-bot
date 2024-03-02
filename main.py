@@ -1,7 +1,6 @@
 import discord
 import asyncio
 from discord.ext import commands
-from decouple import config as ENV
 from music_cog import music_cog
 
 
@@ -107,4 +106,4 @@ async def change_name_channel(ctx, name):
         await ctx.send(f"{ctx.author} você precisa estar conectado em um canal de voz para executar esse comando.")
 
 
-bot.run(ENV("TOKEN"))
+bot.run("TOKEN")
